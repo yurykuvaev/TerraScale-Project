@@ -44,7 +44,7 @@ resource "aws_ecs_service" "web_service" {
   name            = "web-service"
   cluster         = aws_ecs_cluster.web_cluster.id
   task_definition = aws_ecs_task_definition.web_task.arn
-  desired_count   = 1
+  desired_count   = 2
   launch_type     = "EC2"
 
   load_balancer {
@@ -56,4 +56,6 @@ resource "aws_ecs_service" "web_service" {
   deployment_controller {
     type = "ECS"
   }
+
+  health_check_grace_period_seconds = 300
 }
