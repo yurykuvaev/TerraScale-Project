@@ -1,4 +1,4 @@
-# Vercara Project
+# TerraScale on AWS ECS
 
 This project deploys a web application on AWS ECS to demonstrate scalability and automation using Terraform.
 
