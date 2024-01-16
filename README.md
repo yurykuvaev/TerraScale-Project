@@ -1,4 +1,4 @@
-# TerraScale on AWS ECS
+# TerraScale-Project
 
 This project deploys a web application on AWS ECS to demonstrate scalability and automation using Terraform.
 
